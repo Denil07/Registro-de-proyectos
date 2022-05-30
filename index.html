@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+  <title>Registro</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="icon" href="nota.ico">
+
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a type="button" class="boton">
+        <img src="./nota.png" height="50" width="50" />
+
+      </a>
+      <h2 class="cru"> Registro <span</h2>
+    </nav>
+
+  </header>
+  <div style="height: 50px;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-2">
+        <input type="number" class="form-control" id="codigo" />
+      </div>
+      <div class="col-lg-2">
+        <input type="text" class="form-control" id="nombre" />
+      </div>
+      <div class="col-lg-2">
+        <input type="text" class="form-control" id="desripcion" />
+      </div>
+      <div class="col-lg-2">
+        <input type="date" class="form-control" id="fecha" />
+      </div>
+      <div class="col-lg-2">
+        <select class="form-control" id="tipo">
+          <option value="Investigacion">Investigación</option>
+          <option value="Extension">Extensión</option>
+        </select>
+      </div>
+      <div class="col-lg-2">
+        <input type="button" value="Guardar" class="btn btn-outline-success" id="btnGuardar" onclick="guardar()" />
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-12">
+        <table id="Tabla" class="table table-primary table-bordered ">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>Descripción</th>
+              <th>Fecha</th>
+              <th>Tipo</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo">
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="popper/popper.min.js"></script>
+  <script src="bootstrap4/js/bootstrap.min.js"></script>
+
+  <script src="plugins/dynamicTable/jquery.dynamicTable-1.0.0.js"></script>
+
+  <script src="codigo.js"></script>
+</body>
+
+</html>
